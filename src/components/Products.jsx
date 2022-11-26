@@ -1,7 +1,8 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { decrement, increment, reset } from '../store/slices/counter.slice'
-
+import { dbProducts } from '../data/daataBase'
+import { ProductId } from './ProductId'
 const Products = () => {
 
     const dispatch = useDispatch()
@@ -9,128 +10,36 @@ const Products = () => {
     const plus = () => dispatch(increment ())
     const minus = () => dispatch(decrement())
     const resets = () => dispatch(reset())
-    function btnPrubena() {
-        console.log('click')
+    console.log(dbProducts[0].id);
+    const btnPrubena = ({product}) => {
+       
+        console.log(product)
     }
   return (
-    <div>
+    
      
         <div className="productsContainer">
             <div className="productsGrid">
-                <div className="product">
-                    <div className="box">
-                        <img src="./vector1.png" alt="" />
-                       <p>Beds</p>
-                    </div>
-                    <div className="btnBox">
-                        <button onClick={minus}>-</button>
-                        <p> {counter}</p>
-                        <button onClick={plus}>+</button>
+              
+                    {dbProducts.map((product, i ) =>(
+                       <div>
+                        <ProductId product={product} i={i}/>
+                            {/* <div className="box">
+                                <img src={product.image} alt="" />
+                                <p>{product.name}</p>
+                            </div>
+                            <div className="btnBox"> 
+                            <button onClick={minus}>-</button>
+                                <p> {product.amount}</p>
+                                <button onClick={(product) => btnPrubena}>+</button>
+                            </div> */}
                         
                         
-                    </div>
-                </div>
-                <div className="product">
-                <div className="box">
-                <img src="./refridegator.png" alt="" />
-                <p>Beds</p>
-                    </div>
-                    <div className="btnBox">
-                    <button onClick={minus}>-</button>
-                        <p> {counter}</p>
-                        <button onClick={plus}>+</button>
-                    </div>
-                </div>
-                <div className="product">
-                <div className="box">
-                <img src="./vector2.png" alt="" />
-                <p>Beds</p>
-                    </div>
-                    <div className="btnBox">
-                    <button onClick={minus}>-</button>
-                        <p> {counter}</p>
-                        <button onClick={plus}>+</button>
-                    </div>
-                </div>
-                <div className="product">
-                <div className="box">
-                <img src="./vector3.png" alt="" />
-                <p>Beds</p>
-                    </div>
-                    <div className="btnBox">
-                    <button onClick={minus}>-</button>
-                        <p> {counter}</p>
-                        <button onClick={plus}>+</button>
-                    </div>
-                </div>
-                <div className="product">
-                <div className="box">
-                <img src="./vector4.png" alt="" />
-                <p>Beds</p>
-                    </div>
-                    <div className="btnBox">
-                    <button onClick={minus}>-</button>
-                        <p> {counter}</p>
-                        <button onClick={plus}>+</button> 
-                    </div>
-                </div>
-                <div className="product">
-                <div className="box">
-                <img src="./vector5.png" alt="" />
-                <p>Beds</p>
-                    </div>
-                    <div className="btnBox">
-                    <button onClick={minus}>-</button>
-                        <p> {counter}</p>
-                        <button onClick={plus}>+</button>
-                    </div>
-                </div>
-                <div className="product">
-                <div className="box">
-                <img src="./washer-dryer.png" alt="" />
-                <p>Beds</p>
-                    </div>
-                    <div className="btnBox">
-                    <button onClick={minus}>-</button>
-                        <p> {counter}</p>
-                        <button onClick={plus}>+</button>
-                        
-                    </div>
-                </div>
-                <div className="product">
-                <div className="box">
-                <img src="./group.png" alt="" />
-                <p>Beds</p>
-                    </div>
-                    <div className="btnBox">
-                    <button onClick={minus}>-</button>
-                        <p> {counter}</p>
-                        <button onClick={plus}>+</button>
-                    </div>
-                </div>
-                <div className="product">
-                <div className="box">
-                <img src="vector6.png" alt="" />
-                <p>Beds</p>
-                    </div>
-                    <div className="btnBox">
-                    <button onClick={minus}>-</button>
-                        <p> {counter}</p>
-                        <button onClick={plus}>+</button>
-                    </div>
-                </div>
-                <div className="product">
-                <div className="box">
-                <img src="./vector7.png" alt="" />
-                <p>Beds</p>
-                    </div>
-                    <div className="btnBox">
-                    <button onClick={minus}>-</button>
-                        <p> {counter}</p>
-                        <button onClick={plus}>+</button>
-                    </div>
-                </div>
-            </div>
+                        </div>
+                       
+                    ))}
+                    
+            
         <div className="finalBtn">
             <button onClick={resets} className='noColorBtn'> Clear</button>
             <button onClick={resets} className='colorBtn'>Calculate</button>
