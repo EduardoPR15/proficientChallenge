@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.top{
+width: 100%;
+height: 140px;
+background-color: #FD9255;
+}
+.homeIcon{
+  position: absolute;
+  left: 15%;
+  top: 2%;
+  cursor: pointer;
+
+}
+.textNav{
+  
+  position: relative;
+  top: 40%;
+  bottom: 40%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 40%;
+ color: white;
+}
+.text1, .text2, .text3,.text4:hover{
+cursor: pointer;
+}
+.titles1{
+  margin-top: 150px;
+text-align: center;
+font-size: xx-large;
+color: #06170B;
+}
+.titles2{
+  position: relative;
+  margin: auto;
+  margin-bottom: 70px;
+  padding-top: 10px;
+  font-size: medium;
+  line-height: 30px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+  color:  #666666;
+}
+.productsContainer{
+  display: flex;
+  margin: auto;
+
+}
+.productsGrid{
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+
+}
+.product{
+
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.box p{
+  text-align: center;
+}
+.box img{
+  
+  margin: auto;
+  margin-top: 20%;
+  margin-bottom: 10%;
+  width: 80px;
+  height: 80px;
+}
+.btnBox{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 20%;
+}
+.btnBox button{
+  width: 40px;
+  height: 50px;
+}
