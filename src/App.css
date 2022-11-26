@@ -5,6 +5,10 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+button:hover{
+  cursor: pointer;
+
+}
 .top{
 width: 100%;
 height: 140px;
@@ -50,6 +54,7 @@ color: #06170B;
 }
 .productsContainer{
   display: flex;
+  flex-direction: column;
   margin: auto;
 
 }
@@ -91,11 +96,142 @@ color: #06170B;
 }
 .btnBox{
   display: flex;
+  border-radius: 10px;
   justify-content: space-between;
   width: 100%;
   height: 20%;
+  background-color:  #F5F5F5;
+  
+ 
 }
 .btnBox button{
   width: 40px;
   height: 50px;
+  border: none;
+  background-color: transparent; 
+}
+.btnBox p{
+  background-color: white;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  height: 90%;
+}
+.finalBtn{
+padding-top: 70px;
+padding-bottom: 70px;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  
+}
+
+.finalBtn button{
+
+  width: 15%;
+  height: 60px;
+  border: #FD9255 2px solid;
+  border-radius: 5px;
+}
+.colorBtn{
+  background-color: #FD9255;
+}
+.noColorBtn{
+  background-color: transparent;
+}
+.summaryBox{
+  width: 400px;
+  margin: auto;
+  height: 300px;
+  margin-bottom: 100px;
+}
+.summaryGrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 10px;
+  column-gap: 50px;
+  padding: 50px;
+  background: #F9F9F9;
+}
+.TotalBox{
+  display: flex;
+  width: auto;
+  height: auto;
+  text-align: left;
+  
+}
+.footerBox{
+  display: flex;
+  width: 100%;
+  height: 400px;
+  background-color: #FD9255;
+  
+}
+
+.leftBox{
+ color: white;
+ width: 400px;
+ height: auto;
+ display: flex;
+ flex-direction: column;
+ row-gap: 50px;
+ margin-left: 20%;
+ padding-right: 50px;
+}
+.logo{
+  display: flex;
+  width: 200px;
+  height: 90px;
+}
+.logo img{
+  margin-top: 50px;
+  width: 50px;
+  height: 50px;
+}
+.text4{
+  text-align: justify;
+  font-size: small;
+  line-height: 25px;
+  padding-top: 5px;
+  width: 200px;
+ 
+}
+.footerGrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 0.5fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+margin-right: 20%;
+color: white;
+}
+.Text1{
+  position: relative;
+  top: 50px;
+  height: 90px;
+  width: 100px;
+}
+.textBox2{
+  background-color: #666666;
+  font-size: small;
+  line-height: 25px;
+}
+.textBox1{
+  line-height: 50px;
+  font-size: small;
+  height: 170px;
+  grid-row: 2/3;
+
+}
+.textBox3{
+  width: 200px;
+  font-size: small;
+  line-height: 50px;
+}
+.WhatsappBox{
+  background-color: aqua;
+  grid-column: 3;
 }

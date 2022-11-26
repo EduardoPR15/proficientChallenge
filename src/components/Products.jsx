@@ -9,9 +9,12 @@ const Products = () => {
     const plus = () => dispatch(increment ())
     const minus = () => dispatch(decrement())
     const resets = () => dispatch(reset())
+    function btnPrubena() {
+        console.log('click')
+    }
   return (
     <div>
-        <h1>productos</h1>
+     
         <div className="productsContainer">
             <div className="productsGrid">
                 <div className="product">
@@ -20,9 +23,11 @@ const Products = () => {
                        <p>Beds</p>
                     </div>
                     <div className="btnBox">
-                        <button onClick={plus}>+</button>
-                        <p> {counter}</p>
                         <button onClick={minus}>-</button>
+                        <p> {counter}</p>
+                        <button onClick={plus}>+</button>
+                        
+                        
                     </div>
                 </div>
                 <div className="product">
@@ -31,9 +36,9 @@ const Products = () => {
                 <p>Beds</p>
                     </div>
                     <div className="btnBox">
-                        <button>+</button>
-                        <p> total</p>
-                        <button>-</button>
+                    <button onClick={minus}>-</button>
+                        <p> {counter}</p>
+                        <button onClick={plus}>+</button>
                     </div>
                 </div>
                 <div className="product">
@@ -42,9 +47,9 @@ const Products = () => {
                 <p>Beds</p>
                     </div>
                     <div className="btnBox">
-                        <button>+</button>
-                        <p> total</p>
-                        <button>-</button>
+                    <button onClick={minus}>-</button>
+                        <p> {counter}</p>
+                        <button onClick={plus}>+</button>
                     </div>
                 </div>
                 <div className="product">
@@ -53,9 +58,9 @@ const Products = () => {
                 <p>Beds</p>
                     </div>
                     <div className="btnBox">
-                        <button>+</button>
-                        <p> total</p>
-                        <button>-</button>
+                    <button onClick={minus}>-</button>
+                        <p> {counter}</p>
+                        <button onClick={plus}>+</button>
                     </div>
                 </div>
                 <div className="product">
@@ -64,9 +69,9 @@ const Products = () => {
                 <p>Beds</p>
                     </div>
                     <div className="btnBox">
-                        <button>+</button>
-                        <p> total</p>
-                        <button>-</button>
+                    <button onClick={minus}>-</button>
+                        <p> {counter}</p>
+                        <button onClick={plus}>+</button> 
                     </div>
                 </div>
                 <div className="product">
@@ -75,9 +80,9 @@ const Products = () => {
                 <p>Beds</p>
                     </div>
                     <div className="btnBox">
-                        <button>+</button>
-                        <p> total</p>
-                        <button>-</button>
+                    <button onClick={minus}>-</button>
+                        <p> {counter}</p>
+                        <button onClick={plus}>+</button>
                     </div>
                 </div>
                 <div className="product">
@@ -86,10 +91,10 @@ const Products = () => {
                 <p>Beds</p>
                     </div>
                     <div className="btnBox">
-                        <button>+</button>
-                        <p> total</p>
-                        <button>-</button>
-                        <p>Beds</p>
+                    <button onClick={minus}>-</button>
+                        <p> {counter}</p>
+                        <button onClick={plus}>+</button>
+                        
                     </div>
                 </div>
                 <div className="product">
@@ -98,9 +103,9 @@ const Products = () => {
                 <p>Beds</p>
                     </div>
                     <div className="btnBox">
-                        <button>+</button>
-                        <p> total</p>
-                        <button>-</button>
+                    <button onClick={minus}>-</button>
+                        <p> {counter}</p>
+                        <button onClick={plus}>+</button>
                     </div>
                 </div>
                 <div className="product">
@@ -109,9 +114,9 @@ const Products = () => {
                 <p>Beds</p>
                     </div>
                     <div className="btnBox">
-                        <button>+</button>
-                        <p> total</p>
-                        <button>-</button>
+                    <button onClick={minus}>-</button>
+                        <p> {counter}</p>
+                        <button onClick={plus}>+</button>
                     </div>
                 </div>
                 <div className="product">
@@ -120,13 +125,20 @@ const Products = () => {
                 <p>Beds</p>
                     </div>
                     <div className="btnBox">
-                        <button>+</button>
-                        <p> total</p>
-                        <button>-</button>
+                    <button onClick={minus}>-</button>
+                        <p> {counter}</p>
+                        <button onClick={plus}>+</button>
                     </div>
                 </div>
             </div>
+        <div className="finalBtn">
+            <button onClick={resets} className='noColorBtn'> Clear</button>
+            <button onClick={resets} className='colorBtn'>Calculate</button>
         </div>
+
+
+        </div>
+      
 
     </div>
 

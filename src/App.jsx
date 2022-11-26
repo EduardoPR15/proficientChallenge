@@ -2,8 +2,10 @@ import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 import './App.css'
+import Footer from './components/Footer'
 import Home from './components/Home'
 import Products from './components/Products'
+import Summary from './components/Summary'
 import counterSlice, { decrement, increment, reset } from './store/slices/counter.slice'
 
 function App() {
@@ -20,6 +22,9 @@ const resets = () => dispatch(reset())
 
  <Home/>
  <Products/>
+ <Summary/>
+ <Footer/>
+
  {/* <div> <h1>objeto 1</h1>
  <button onClick={plus}> +1 </button>
  <button onClick={minus}> -1 </button>
