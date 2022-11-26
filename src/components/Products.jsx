@@ -3,14 +3,19 @@ import { useDispatch, useSelector } from 'react-redux'
 import { decrement, increment, reset } from '../store/slices/counter.slice'
 import { dbProducts } from '../data/daataBase'
 import { ProductId } from './ProductId'
+import {sumArr,sumTwoArrays, minArr} from '../data/sumArray'
 const Products = () => {
 
     const dispatch = useDispatch()
     const counter = useSelector(state => state.counter)
     const plus = () => dispatch(increment ())
     const minus = () => dispatch(decrement())
-    const resets = () => dispatch(reset())
+    function resets  () {
+        dispatch(reset())
+        let sumArr = []
+    } 
     console.log(dbProducts[0].id);
+    console.log(sumArr)
     const btnPrubena = ({product}) => {
        
         console.log(product)
@@ -24,30 +29,20 @@ const Products = () => {
                     {dbProducts.map((product, i ) =>(
                        <div>
                         <ProductId product={product} i={i}/>
-                            {/* <div className="box">
-                                <img src={product.image} alt="" />
-                                <p>{product.name}</p>
-                            </div>
-                            <div className="btnBox"> 
-                            <button onClick={minus}>-</button>
-                                <p> {product.amount}</p>
-                                <button onClick={(product) => btnPrubena}>+</button>
-                            </div> */}
                         
                         
                         </div>
                        
                     ))}
                     
+      
+
+
+        </div>
             
         <div className="finalBtn">
-            <button onClick={resets} className='noColorBtn'> Clear</button>
-            <button onClick={resets} className='colorBtn'>Calculate</button>
+            <button onClick={resets}> Clear</button>
         </div>
-
-
-        </div>
-      
 
     </div>
 

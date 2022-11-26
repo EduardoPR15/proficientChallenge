@@ -24,7 +24,7 @@ const Footer = () => {
 <div className="Text1 ">
     <p>Navigate</p>
 </div>
-<div className="Text1 ">
+<div className="Text2 ">
    <p>Contac Us</p>
 </div>
 <div className="textBox1 ">
@@ -48,10 +48,8 @@ const Footer = () => {
     <p>Email: info@challenge.com</p>
 </div>
 
-{/* <div className="caja1"><p>not to use</p></div>
-<div className="caja1"><p>not to use</p></div> */}
-<div className="WhatsappBox  boxFooters">
-    <p>whatsapp</p>
+<div className="WhatsappBox  ">
+   <img src="./whatsapp.png" alt="" />
 </div>
 
         </div>
