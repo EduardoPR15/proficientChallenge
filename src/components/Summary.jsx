@@ -47,7 +47,7 @@ const Summary = () => {
                 <p>Total m^2</p>
             </div>
             <div className="TotalBox">
-                <p>${totalm2}</p>
+                <p>{totalm2}</p>
             </div>
             <div className="TotalBox">
                 <p>Subtotal</p>
