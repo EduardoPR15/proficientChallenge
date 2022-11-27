@@ -21,6 +21,8 @@ export const ProductId = ({product, i}) => {
    
  function plus(){
    
+ 
+  
 
     setAmountCounter(product.amount++)
     setAmount1(amount1 + 1)
@@ -29,14 +31,17 @@ export const ProductId = ({product, i}) => {
     settotalprice(totalprice + 1)
     let price = 2
     return price
+
  }
  const minus = () =>{
-    if (product.amount > 0){
-        dispatch(decrement())
+  if (product.amount > 0) {
+         dispatch(decrement())
         setAmount1(amount1 - 1)
     setAmountCounter(product.amount--)
     minArr.push(product.m2 * -1)
-}
+    }
+     
+
  }
 
   return (
