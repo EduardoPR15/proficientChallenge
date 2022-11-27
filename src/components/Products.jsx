@@ -27,7 +27,7 @@ const Products = () => {
             <div className="productsGrid">
               
                     {dbProducts.map((product, i ) =>(
-                       <div>
+                       <div className='productBox'>
                         <ProductId product={product} i={i}/>
                         
                         

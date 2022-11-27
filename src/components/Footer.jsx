@@ -10,21 +10,27 @@ const Footer = () => {
     <div className="text4 ">
         <p>It is a long established fact that a reader will be distracted by the readable content of a page whenters.</p>
     </div>
-    <div className="iconBox boxFooters">
-        <p>icon1</p>
-        <p>icon2</p>
-        <p>icon3</p>
+    <div className="iconBox ">
+        <div className="iconBorder">
+            <img src="./043-twitter.png" alt="" />
+        </div>
+        <div className="iconBorder">
+            <img src="./021-facebook.png" alt="" />
+        </div>
+        <div className="iconBorder">
+            <img src="./025-instagram.png" alt="" />
+        </div>
     </div>
 </div>
 <div className="footerGrid">
 
-<div className="Text1 ">
+<div className="footerText1 ">
     <p>About Us</p>
 </div>
-<div className="Text1 ">
+<div className="footerText2 ">
     <p>Navigate</p>
 </div>
-<div className="Text2 ">
+<div className="footerText3 ">
    <p>Contac Us</p>
 </div>
 <div className="textBox1 ">
@@ -33,7 +39,7 @@ const Footer = () => {
     <p>Terms & Conditions</p>
     <p>Faq</p>
 </div>
-<div className="textBox1 ">
+<div className="textBox2 ">
    
 <p>How We Work</p>
     <p>Services</p>
