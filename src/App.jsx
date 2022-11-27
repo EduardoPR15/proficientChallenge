@@ -16,6 +16,9 @@ function App() {
 
  <Home/>
  <Products/>
+ <div className="titles3">
+            <h1>Summary</h1>
+        </div>
  <Summary/>
  <Footer/>
 

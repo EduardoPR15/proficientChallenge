@@ -95,6 +95,10 @@ animation: animate 1s cubic-bezier(1,0,0,0) forwards;
     }
     
 }
+.titles3{
+  text-align: center;
+  font-size: x-large;
+}
 .productsContainer{
 width: 100%;
 margin-left: auto;
