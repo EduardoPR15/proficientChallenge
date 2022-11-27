@@ -272,6 +272,7 @@ height: 200px;
   margin: auto;
 }
 .iconBorder img:hover{
+  cursor: pointer;
   transform: scale(1.5);
   transition: transform 500ms ease;
 }
@@ -322,6 +323,7 @@ justify-content: space-around;
   transition: transform 500ms ease;
 }
 .WhatsappBox:hover{
+  cursor: pointer;
   transform: scale(1.2);
 transition: transform 500ms ease;
 }
