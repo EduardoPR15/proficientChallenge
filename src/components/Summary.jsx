@@ -1,14 +1,15 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import {sumArr, minArr, incrementTotal,sumTwoArrays } from '../data/sumArray'
+import {sumArr, minArr, incrementTotal,sumTwoArrays, resArr } from '../data/sumArray'
 
 const Summary = () => {
     const counter = useSelector(state => state.counter)
    function prueba(counter){
 
   if(counter === 0){
-    console.log('vacxio');
     let totalm2 = 0
+    sumArr.length = 0
+    minArr.length = 0
     return totalm2
     
 }else{
@@ -18,9 +19,7 @@ const Summary = () => {
 
    } 
  const totalm2 = prueba(counter)
-    
-    
-   // const totalm2 = (sumTwoArrays(sumArr,minArr).toFixed(2))
+    console.log(totalm2);
     let totalPrice = (200 * totalm2) 
     let price = totalPrice.toFixed(2)
     let totalTaxes = (totalPrice * .16)

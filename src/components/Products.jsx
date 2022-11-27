@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { decrement, increment, reset } from '../store/slices/counter.slice'
 import { dbProducts } from '../data/daataBase'
 import { ProductId } from './ProductId'
-import {sumArr,sumTwoArrays, minArr} from '../data/sumArray'
+import {sumArr,sumTwoArrays, minArr, resArr} from '../data/sumArray'
 const Products = () => {
 
     const dispatch = useDispatch()
@@ -14,8 +14,9 @@ const Products = () => {
         dispatch(reset())
         let sumArr = []
     } 
-    console.log(dbProducts[0].id);
+    //console.log(dbProducts[0].id);
     console.log(sumArr)
+    console.log(resArr);
     const btnPrubena = ({product}) => {
        
         console.log(product)

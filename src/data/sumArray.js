@@ -1,9 +1,10 @@
+
 export let  sumArr = []
 export let minArr = []
+export let resArr =[]
 export let incrementTotal = 0
  
 export let decrementTotal
-
 
 export function sumTwoArrays(array, array2) {
     let suma1 = 0
