@@ -44,7 +44,7 @@ background-color: #FD9255;
 
 transition: transform 500ms ease;
 }
-.text1, .text2, .text3,.text4{
+.text1, .text2, .text3{
   width: 40px;
   margin: auto;
   transition: transform 500ms ease;
@@ -61,8 +61,17 @@ transition: transform 500ms ease;
   text-align: center;
   font-size: x-large;
   color: #06170B;
-  
+  transform: scaleX(0);
+transform-origin: left;
+animation: animate 1s cubic-bezier(1,0,0,0) forwards;
 }
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+    
+}
+  
 .titles2{
   position: relative;
   margin: auto;
@@ -76,6 +85,15 @@ transition: transform 500ms ease;
   height: auto;
   text-align: center;
   color:  #666666;
+  transform: scaleX(0);
+transform-origin: right;
+animation: animate 1s cubic-bezier(1,0,0,0) forwards;
+}
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+    
 }
 .productsContainer{
 width: 100%;
@@ -327,10 +345,14 @@ transition: transform 500ms ease;
       
   
     }
-    .text1, .text2, .text3,.text4{
+    .text1, .text2, .text3{
       width: 100px;
       text-align: baseline;
       margin: auto;
+      transition: transform 500ms ease;
+    }
+    .text1:hover, .text2 :hover, .text3:hover{
+      transform: scale(2.2);
       transition: transform 500ms ease;
     }
   .homeIcon{
@@ -372,7 +394,7 @@ transition: transform 500ms ease;
     row-gap:50px ;
   justify-content: center;
     width: 100%;
-    height: 400px;
+    height: 460px;
     background-color: #FD9255;
     
   }
@@ -383,26 +405,28 @@ transition: transform 500ms ease;
    height: auto;
    display: flex;
    flex-direction: column;
-   row-gap: 20px;
    margin-left: 5%;
+   justify-content: unset;
   }
   .logo{
+    margin-top: 30px;
     display: flex;
     width: 200px;
-    height: 100%px;
+    height: 100px;
+    margin-bottom: 20px;
   }
   .logo img{
     margin: auto;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
   }
   .text4{
     text-align: justify;
     font-size: small;
     line-height: 25px;
-    padding-top: 5px;
     width: 200px;
-   
+    height: 100px;
+   margin-bottom: 50px;
   }
   .iconBox{
     display: flex;
@@ -418,11 +442,12 @@ transition: transform 500ms ease;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 0.5fr);
-    grid-row-gap: 40px;
+    grid-row-gap: 20px;
     grid-column-gap: 15px;
   margin-top: 30px;
   margin-right: 5%;
   margin-left: 5%;
+  
   color: white;
   }
   .footerText1, .footerText3, .footerText2{
@@ -436,28 +461,18 @@ transition: transform 500ms ease;
     justify-content: center;
     margin: auto;
   }
-  .textBox2{
-    font-size: small;
-    line-height: 25px;
-  }
-  .textBox1{
-    line-height: 50px;
-    font-size: small;
-    height: 170px;
-    grid-row: 2/3;
-  
-  }
   .textBox3{
-    width: 200px;
-    font-size: small;
-    line-height: 50px;
+    justify-content: center;
+    margin: auto;
+    line-height: 40px;
   }
+
   .WhatsappBox{
-    position: relative;
-    bottom: 30px;
-    width: 150px;
-    grid-column: 3;
+    display: flex;
+    grid-column: 2;
+    width: 100%;
     margin-bottom: 50px;
+    justify-content: center;
   }
   .WhatsappBox img{
     width: 100%;
